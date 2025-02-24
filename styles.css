@@ -6,6 +6,13 @@ body {
     background: linear-gradient(to right, #141e30, #243b55);
     color: white;
 }
+.header h1 {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #007BFF, #00FF88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 2s ease-in-out;
+}
 
 header {
     background: rgba(0, 115, 230, 0.9);
