@@ -186,3 +186,44 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+.nav-menu {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-menu ul li {
+    position: relative;
+}
+
+.nav-menu ul li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #ffcc00;
+    bottom: -5px;
+    left: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu ul li:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    color: black;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(255, 153, 0, 0.4);
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #ff9900, #ff6600);
+    transform: scale(1.05);
+}
