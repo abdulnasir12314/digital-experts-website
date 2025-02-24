@@ -16,7 +16,6 @@ body {
     -webkit-text-fill-color: transparent;
     animation: fadeIn 2s ease-in-out;
 }
-
 header {
     background: rgba(0, 115, 230, 0.9);
     padding: 15px 0;
