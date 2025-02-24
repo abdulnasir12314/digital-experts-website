@@ -1,70 +1,863 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" prefix="og: http://ogp.me/ns#" itemscope itemtype="https://schema.org/FAQPage">
+
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-html {
-    scroll-behavior: smooth;
-}
-</style>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Experts - Professional Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-       <nav>
-    <div class="logo">Digital Experts</div>
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-    </header>
-    
-    <section class="hero">
-        <h1>Welcome to Digital Experts</h1>
-        <p>Your One-Stop Digital Marketing Solution</p>
-        <a href="contact.html" class="cta-button">Get Started</a>
-    </section>
-
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service-list">
-            <div class="service-item">SEO Optimization</div>
-            <div class="service-item">Social Media Management</div>
-            <div class="service-item">E-commerce Management</div>
-            <div class="service-item">Shopify Store Design</div>
-        </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Digital Experts. All rights reserved.</p>
-    </footer>
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const revealElements = document.querySelectorAll(".reveal");
-
-    function revealOnScroll() {
-        revealElements.forEach((el) => {
-            let windowHeight = window.innerHeight;
-            let elementTop = el.getBoundingClientRect().top;
-            let revealPoint = 100;
-
-            if (elementTop < windowHeight - revealPoint) {
-                el.classList.add("active");
-            }
-        });
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" fetchpriority="high" type='text/css' href="template/style.css" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="template/favicon.ico" />
+    <link rel="sitemap" type="application/xml" href="https://www.digitalfirm.pk/sitemap.xml"/>
+    <title>Digital Marketing Agency | Pakistan Top Digital Agency</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "image": "https://www.digitalfirm.pk/islamabad-day-time.jpg",
+      "url": "https://www.digitalfirm.pk",
+      "sameAs": ["https://www.digitalfirm.pk/digital-marketing-services/", "https://www.digitalfirm.pk/marketing-agency/"],
+      "logo": "https://www.digitalfirm.pk/df-logo.png",
+      "name": "Digital Firm",
+      "description": "Pakistan Leading Digital Marketing Agency. Get a free quote for SEO, PPC, Social Media Marketing & Web Design. Grow your business today.",
+      "email": "email@digitalfirm.pk",
+      "telephone": "+92-300-80499-28",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Block 2F, Abu Huraira Market",
+        "addressLocality": "Islamabad",
+        "addressCountry": "PK",
+        "addressRegion": "Sector I-8/2",
+        "postalCode": "44000"
+      }
     }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400" rel="stylesheet" fetchpriority="low">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "EmployerAggregateRating",
+      "description": "Digital Firm SMC Pvt Ltd gets 4.8/5 stars as Best Digital Agency based on 57 ratings.",
+      "itemReviewed": {
+        "@type": "Organization",
+        "name": "Digital Firm SMC Pvt Ltd",
+        "sameAs" : "https://www.digitalfirm.pk"
+      },
+      "ratingCount": 57,
+      "ratingValue": 4.8,
+      "worstRating": 1,
+      "bestRating": 5
+    }
+    </script>
+    <!--<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is digital marketing and how can it benefit businesses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>Digital marketing is the strategic use of digital channels to promote a brand, product, or service to a targeted audience. It involves optimizing content across platforms like search engines, social media, email, and websites to reach potential customers through internet-connected devices. Advanced digital marketing leverages data, analytics, and automation to create personalized and measurable marketing strategies that drive engagement, visibility, and conversions. By effectively implementing digital marketing strategies, businesses can achieve significant benefits, including increased brand awareness, improved lead generation, higher conversion rates, enhanced customer engagement, and measurable return on investment.</p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "What Industries Do We Specialize In?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We specialize in providing tailored digital marketing solutions for a wide range of industries, including e-commerce, real estate, healthcare, education, technology, travel, and hospitality. Our expertise lies in understanding the unique challenges and opportunities within these sectors. We leverage our knowledge to develop effective strategies that drive brand awareness, generate leads, and boost sales. Whether you're a small business or a large corporation, we're committed to helping you achieve your digital marketing goals."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How can your digital marketing services help my business grow?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our comprehensive digital marketing services are designed to boost your online visibility, attract more customers, and increase your revenue. By combining SEO, PPC, content marketing, social media management, and web design, we create a tailored strategy to achieve your business goals."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can Google Ads Be Used for All Industries and Products?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "While Google Ads is a powerful tool for advertising, there are specific industries and products that are subject to stricter regulations and guidelines. This is to ensure a positive user experience and maintain the integrity of the platform. For example, industries such as healthcare and pharmaceuticals often require specific certifications and compliance with regulatory standards. Similarly, financial services, including loans and investments, are subject to strict regulations and require specific disclosures. It's crucial to carefully review Google's Advertising Policies to ensure compliance. If you're unsure about the specific requirements for your industry or product, it's advisable to consult with a digital marketing expert or directly with Google's support team."
+        }
+      }]
+    }
+    </script>-->
+    <!-- This site is optimized -->
+    <meta name="description"
+        content="Pakistan Leading Digital Marketing Agency. Get a free quote for SEO, PPC, Social Media Marketing & Web Design. Grow your business today." />
+    <meta data-react-helmet="true" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://www.digitalfirm.pk/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Digital Marketing Agency | Pakistan Top Digital Agency" />
+    <meta property="og:description" content="Pakistan Leading Digital Marketing Agency. Get a free quote for SEO, PPC, Social Media Marketing & Web Design. Grow your business today." />
+    <meta property="og:url" content="https://www.digitalfirm.pk/" />
+    <meta property="og:site_name" content="Digital Marketing Agency | Pakistan Top Digital Agency" />
+    <meta property="article:publisher" content="https://www.facebook.com/digitalfirm.pk" />
+    <meta property="og:image" content="https://www.digitalfirm.pk/file/2014/09/services-graphic-dev.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Digital Marketing Agency | Pakistan Top Digital Agency" />
+    <meta name="twitter:description" content="Pakistan Leading Digital Marketing Agency. Get a free quote for SEO, PPC, Social Media Marketing & Web Design. Grow your business today." />
+    <meta name="twitter:site" content="@DigitalFirmPk" /><meta name="twitter:label1" content="Est. reading time" />
+    <meta name="twitter:data1" content="15 minutes" />
+    <script
+        type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/www.digitalfirm.pk\/","name":"Digital Firm","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.digitalfirm.pk\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+    <!-- / No plugin. 
+    <link rel='stylesheet' id='easy_author_image-css'
+        href='modules/easy-author-image/css/easy-author-imagea94e.css?ver=4.4.1' type='text/css' media='all' />-->
+    <script type='text/javascript' src='lib/js/jquery/jqueryc1d8.js?ver=1.11.3' fetchpriority="low"></script>
+    <script type='text/javascript' src='lib/js/jquery/jquery-migrate.min1576.js?ver=1.2.1' fetchpriority="low"></script>
+    <script type='text/javascript' src='template/js/velocity.mina94e.js?ver=4.4.1' fetchpriority="low"></script>
+    <!--<script type='text/javascript' src='template/js/imagesLoaded.mina94e.js?ver=4.4.1'></script>-->
+    <script type='text/javascript' src='lib/js/jquery.parallax-1.1.3a94e.js?ver=4.4.1' fetchpriority="low"></script>
+    <script type='text/javascript' src='lib/js/jquery/ui/widget.mine899.js?ver=1.11.4' fetchpriority="low"></script>
+    <script type='text/javascript' src='lib/js/masonry.min0226.js?ver=3.1.2' fetchpriority="low"></script>
+    <script type='text/javascript' src='lib/js/jquery/jquery.masonry.min0226.js?ver=3.1.2' fetchpriority="low"></script>
+    <script type='text/javascript' src='template/js/ro-widgetsa94e.js?ver=4.4.1' fetchpriority="low"></script>
+    <script type='text/javascript' src='template/js/ro-controllera94e.js?ver=4.4.1' fetchpriority="low"></script>
+    <script type='text/javascript' src='template/js/jquery.slides.mina94e.js?ver=4.4.1' fetchpriority="low"></script>
+    <script type='text/javascript' src='template/js/jquery.bxslider.mina94e.js?ver=4.4.1' fetchpriority="low"></script>
+    <meta name="google-site-verification" content="KFvDsYZHGPXqrgMyp2QQEDoMGf_4wRRmHcSotU0o4qE" />
 
-    window.addEventListener("scroll", revealOnScroll);
-    revealOnScroll(); // Run on page load
-});
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FBHJM2M723" fetchpriority="low"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FBHJM2M723');
 </script>
+</head>
+<body class="home page page-id-4 page-template page-template-page-home page-template-page-home-php">
 
+    <header class="header block" id="js-header">
+        <style>
+            .dsp-tc {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .header .wrapper {
+                display: block;
+                height: inherit;
+            }
+
+            .header .head-logo {
+                display: table;
+                height: 100%;
+                float: left;
+            }
+
+            .header .navigation {
+                height: 100%;
+            }
+
+            .header .navigation>.menu {
+                display: table;
+            }
+
+            .header .navigation>.menu-item {
+                display: table-cell;
+                float: none;
+                vertical-align: middle;
+                line-height: 1;
+            }
+        </style>
+
+        <div class="wrapper">
+            <a href="https://www.digitalfirm.pk/" class="head-logo ">
+                <span class="dsp-tc">
+                    <img class="logo-white" fetchpriority="high" src="https://www.digitalfirm.pk/file/elements/digital-firm-white-logo.svg" width="218" height="52" alt="Logo" />
+                    <img class="logo-color" src="https://www.digitalfirm.pk/file/elements/digital-firm-color-logo.svg" fetchpriority="high" width="218" height="52" alt="Logo"  />
+                </span>
+            </a>
+            <div class="mobile-hamburger" id="js-mobile-hamburger"></div>
+            <nav class="navigation" id="menu" role="navigation">
+                <ul class="menu">
+                    <li class="menu-item request-quote-mobile js-rfq-open-2">
+                        <a href="https://www.digitalfirm.pk/"><span>Request </span>quote</a>
+                    </li>
+                    <li class="menu-item menu-item-50  top-link">
+                        <a href="https://www.digitalfirm.pk/#">work</a>
+                    </li>
+                    <li class="menu-item menu-item-44 js-nav-parent top-link">
+                        <a href="https://www.digitalfirm.pk/digital-marketing-services/">Services</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item headerIcon-5087 child-link"
+                                style="background-image:url(assets/uploads/elements/submenu-icon-5087.png);">
+                                <a href="https://www.digitalfirm.pk/digital-marketing-services/seo-marketing/">SEO MARKETING</a>
+                            </li>
+                            <li class="menu-item headerIcon-264 child-link"
+                                style="background-image:url(assets/uploads/elements/submenu-icon-264.png);">
+                                <a href="https://www.digitalfirm.pk/digital-marketing-services/ppc-marketing/">PPC MARKETING</a>
+                            </li>
+                            <li class="menu-item headerIcon-2481 child-link"
+                                style="background-image:url(assets/uploads/elements/submenu-icon-2481.png);">
+                                <a href="https://www.digitalfirm.pk/digital-marketing-services/content-marketing/">CONTENT MARKETING</a>
+                            </li>
+                            <li class="menu-item headerIcon-263 child-link"
+                                style="background-image:url(assets/uploads/elements/submenu-icon-263.png);">
+                                <a href="https://www.digitalfirm.pk/digital-marketing-services/social-media-marketing/">SOCIAL MEDIA</a>
+                            </li>
+                            <li class="menu-item headerIcon-2377 child-link"
+                                style="background-image:url(assets/uploads/elements/submenu-icon-2377.png);">
+                                <a href="https://www.digitalfirm.pk/digital-marketing-services/web-design/">WEB DESIGN</a>
+                            </li>
+                            <li class="menu-item headerIcon-2477 child-link"
+                                style="background-image:url(assets/uploads/elements/submenu-icon-2477.png);">
+                                <a href="https://www.digitalfirm.pk/digital-marketing-services/branding/">BRANDING / IDENTITY</a>
+                            </li>
+                            <li class="menu-item headerIcon-2376 child-link"
+                                style="background-image:url(assets/uploads/elements/submenu-icon-2376.png);">
+                                <a href="https://www.digitalfirm.pk/digital-marketing-services/web-development/">DEVELOPMENT</a>
+                            </li>
+                            <li class="menu-item headerIcon-265 child-link"
+                                style="background-image:url(assets/uploads/elements/submenu-icon-265.png);">
+                                <a href="https://www.digitalfirm.pk/digital-marketing-services/app-development/">iOS / ANDROID APPS</a>
+                            </li>
+                            <li class="menu-item headerIcon-2377 child-link"
+                                style="background-image:url(assets/uploads/elements/submenu-icon-10.png);">
+                                <a href="https://www.digitalfirm.pk/digital-marketing-services/film-production/">Film Production</a>
+                            </li>
+                            <li class="menu-item headerIcon-2477 child-link"
+                                style="background-image:url(assets/uploads/elements/submenu-icon-11.png);">
+                                <a href="https://www.digitalfirm.pk/digital-marketing-services/animation-agency/">Animation Agency</a>
+                            </li>
+                            <li class="menu-item headerIcon-2376 child-link"
+                                style="background-image:url(assets/uploads/elements/submenu-icon-12.png);">
+                                <a href="https://www.digitalfirm.pk/digital-marketing-services/corporate-photography/">Photography</a>
+                            </li>
+                            <li class="menu-item headerIcon-265 child-link"
+                                style="background-image:url(assets/uploads/elements/submenu-icon-13.png);">
+                                <a href="https://www.digitalfirm.pk/digital-marketing-services/events/">Events</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-3732  top-link">
+                        <a href="https://www.digitalfirm.pk/marketing-agency/">Agency</a>
+                    </li>
+                    <li class="menu-item menu-item-42  top-link">
+                        <a href="https://www.digitalfirm.pk/jobs/">Jobs</a>
+                    </li>
+                    <li class="menu-item menu-item-54  top-link">
+                        <a href="https://www.digitalfirm.pk/#">blog</a>
+                    </li>
+                    <li class="menu-item menu-item-41  top-link">
+                        <a href="https://www.digitalfirm.pk/contact/">Contact</a>
+                    </li>
+                    <li class="menu-item request-quote js-rfq-open-2">
+                        <a href="https://www.digitalfirm.pk/"><span>Request </span>quote</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="rfq-wrap-2" id="js-rfq-slideout-2">
+        <div class="close-wrap">
+            <span class="close" id="js-rfq-close-2"><img src="assets/uploads/elements/rfq-close-2.png"  alt="Cross" ></span>
+        </div>
+        <div class="intro">
+            <span class="intro-text">Request a quote</span>
+            <span class="phone">Digital Firm</span>
+        </div>
+        <!-- id="rfq-header" -->
+        <form action="php/send_simple_phpmail.php" method="POST" id="contact-form" name="contactForm" class="js-validate">
+            <input type="hidden" name="s" value="1">
+            <div class="field-wrap js-required">
+                <label>Name<sup>*</sup></label>
+                <input type="text" name="name" value="">
+            </div>
+            <div class="field-wrap half">
+                <label>Company</label>
+                <input type="text" name="company" value="">
+            </div>
+            <div class="field-wrap half">
+                <label>Website URL</label>
+                <input type="text" name="web_address" value="">
+            </div>
+            <div class="field-wrap js-required js-phone half">
+                <label>Phone<sup>*</sup></label>
+                <input type="text" name="phone" value="">
+            </div>
+            <div class="field-wrap js-required js-email half">
+                <label>Email<sup>*</sup></label>
+                <input type="text" name="email" value="">
+            </div>
+            <div class="field-wrap">
+                <label>Address</label>
+                <input name="address" type="text" value="">
+            </div>
+            <div class="field-wrap">
+                <label>Project Goals/Requirements</label>
+                <textarea name="message"></textarea>
+            </div>
+            <div class="field-wrap">
+                <label>Would you like a quote on (check all that apply)</label>
+                <span class="cb-wrap">
+                    <input type="checkbox" name="quote_on1" value="web" />
+                    <span class="cb-label">Web/App</span>
+                </span>
+                <span class="cb-wrap">
+                    <input type="checkbox" name="quote_on2" value="seo_sem" />
+                    <span class="cb-label">SEO/SEM</span>
+                </span>
+                <span class="cb-wrap">
+                    <input type="checkbox" name="quote_on3" value="branding" />
+                    <span class="cb-label">Branding</span>
+                </span>
+                <span class="cb-wrap">
+                    <input type="checkbox" name="quote_on4" value="marketing" />
+                    <span class="cb-label">Marketing</span>
+                </span>
+                <span class="cb-wrap">
+                    <input type="checkbox" name="quote_on5" value="media" />
+                    <span class="cb-label">Media</span>
+                </span>
+                <span class="cb-wrap">
+                    <input type="checkbox" name="quote_on6" value="consulting" />
+                    <span class="cb-label">Consulting</span>
+                </span>
+            </div>
+            <div class="field-wrap submit">
+                <!-- <label>Retype security code:<sup>*</sup></label>
+                <input type="text" name="captcha" size="6" style="width:110px; display:inline;float:left; " />
+                <img src="captcha.jpg" style="float:left; padding:0 30px 0 20px;" /> -->
+                <input type="submit" name="submit" id="submit" value="submit" class="box-link">
+            </div>
+            <div class="error-holder" style="display:none"></div>
+        </form>
+        <!-- <div style="display:none" id="ga-element"></div> This ID should be set right after   js-parallax" id="js-trans-header" -->
+    </div>
+
+    <div class="block hero home-hero js-parallax">
+        <div class="wrapper">
+            <div class="viewer">
+                <!--<img src="assets/uploads/elements/home-hero.jpg" width="300" hieght="200" style="margin-top:-200px" fetchpriority="high" />-->
+                <h1 class="lined">Marketing Agency With A Passion For Digital Marketing Services</h1>
+                <h2 class="digital">Creatively led.</h2>
+                <h1 class="sees-diff">Digital Marketing Agency in Pakistan</h1>
+                <!--[if lte IE 8]>
+            <p style="text-align:center; padding: 40px;">You might want to change to Chrome or Firefox for a more complete browsing experience.</p>
+            <![endif]-->
+            </div>
+        </div>
+        <div class="scroll-cta">
+            <img src="assets/uploads/elements/home-hero-scroll.png" width="22" height="13" alt="scroll">
+            <div>SCROLL</div>
+        </div>
+    </div>
+
+    <div id="js-whatWeDo" class="block whatWeDo">
+        <div class="wrapper" id="js-wwdWrapper">
+            <h2>Digital marketing agency with a <span class="red">strategic focus.</span></h2>
+
+            <div class="wwd-icon-wrap" id="js-whatWeDoNav">
+                <a href="https://www.digitalfirm.pk/digital-marketing-services/" class="js-wwd-icon wwd-icon left" id="js-wwd-left" data-block="1">
+                    <strong class="link-title">Strategy</strong>
+                </a>
+                <a href="https://www.digitalfirm.pk/digital-marketing-services/branding/" class="js-wwd-icon wwd-icon top" id="js-wwd-top" data-block="2">
+                    <strong class="link-title">Design &amp; UI</strong>
+                </a>
+                <a href="https://www.digitalfirm.pk/digital-marketing-services/web-design/" class="js-wwd-icon wwd-icon bottom" id="js-wwd-bottom" data-block="3">
+                    <strong class="link-title">Web Design</strong>
+                </a>
+                <a href="https://www.digitalfirm.pk/digital-marketing-services/social-media-marketing/" class="js-wwd-icon wwd-icon right" id="js-wwd-right" data-block="4">
+                    <strong class="link-title">Paid Media</strong>
+                </a>
+            </div>
+
+            <div class="wwd-video">
+                    <video data-block="1">
+                        <source src="assets/uploads/landing-page-wwd-clip1.mp4" type="video/mp4">
+                        <source src="assets/uploads/landing-page-wwd-clip1.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video data-block="2">
+                        <source src="assets/uploads/landing-page-wwd-clip2.mp4" type="video/mp4">
+                        <source src="assets/uploads/landing-page-wwd-clip2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video data-block="3">
+                        <source src="assets/uploads/landing-page-wwd-clip3.mp4" type="video/mp4">
+                        <source src="assets/uploads/landing-page-wwd-clip3.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video data-block="4">
+                        <source src="assets/uploads/landing-page-wwd-clip4.mp4" type="video/mp4">
+                        <source src="assets/uploads/landing-page-wwd-clip4.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+            </div>
+
+            <div class="wwd-copy">
+                <div class="js-copy copy" data-block="1">
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/" target="_blank" rel="noopener">
+                        <h2 class="red">Digital Marketing Services</h2>
+                    </a>
+                    <p>Digital Firm offers a comprehensive suite of digital marketing services designed to help businesses of all sizes achieve their goals. Whether you're based in <a href="https://www.digitalfirm.pk/digital-marketing-services/karachi-social-media-agency/" target="_blank" rel="noopener">Karachi</a>, <a href="https://www.digitalfirm.pk/digital-marketing-services/lahore-social-media-agency/" target="_blank" rel="noopener">Lahore</a>, <a href="https://www.digitalfirm.pk/digital-marketing-services/islamabad-social-media-agency/" target="_blank" rel="noopener">Islamabad</a>, <a href="https://www.digitalfirm.pk/digital-marketing-services/peshawar-social-media-agency/" target="_blank" rel="noopener">Peshawar</a>, <a href="https://www.digitalfirm.pk/digital-marketing-services/faisalabad-social-media-agency/" target="_blank" rel="noopener">Faisalabad</a>, <a href="https://www.digitalfirm.pk/digital-marketing-services/multan-social-media-agency/" target="_blank" rel="noopener">Multan</a>. We're more than just a marketing agency. We're your growth partner. Our data-driven approach, combined with our expertise in SEO, social media marketing, and content creation, delivers measurable results. Let's elevate your brand together in Islamabad and beyond.</p>
+                </div>
+                <div class="js-copy copy" data-block="2">
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/branding/" target="_blank" rel="noopener">
+                        <h2 class="red">Web Design & Development Services</h2>
+                    </a>
+                    <p>Are you looking to elevate your online presence and drive significant growth? Digital Firm is your trusted partner for cutting-edge digital solutions in Islamabad. We're committed to crafting exceptional digital experiences that captivate audiences and drive results. Our team of skilled designers and developers in Pakistan specializes in creating stunning, user-friendly, and high-performance <a href="https://www.digitalfirm.pk/digital-marketing-services/web-design/" target="_blank" rel="noopener">websites</a> that align with your <a href="https://www.digitalfirm.pk/digital-marketing-services/branding/" target="_blank" rel="noopener">brand identity</a> and business objectives.</p>
+                </div>
+                <div class="js-copy copy" data-block="3">
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/web-design/" target="_blank" rel="noopener">
+                        <h2 class="red">Digital Marketing Agency Islamabad</h2>
+                    </a>
+                    <p>Elevate your online presence with our comprehensive digital marketing and web development services. From <a href="https://www.digitalfirm.pk/digital-marketing-services/seo-marketing/" target="_blank" rel="noopener">SEO</a> and <a href="https://www.digitalfirm.pk/digital-marketing-services/ppc-marketing/" target="_blank" rel="noopener">PPC</a> to social media marketing, content strategy, creative campaigns, web design, e-commerce solutions, and website maintenance, we've got you covered. Let's work together to drive your business forward in Islamabad and beyond.</p>
+                </div>
+                <div class="js-copy copy" data-block="4">
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/social-media-marketing/" target="_blank" rel="noopener">
+                        <h2 class="red">Digital Marketing Agency Pakistan</h2>
+                    </a>
+                    <p>As a top-tier digital marketing agency in Islamabad, Pakistan. Digital Firm excels in crafting data-driven marketing strategies that deliver tangible results. We leverage targeted <a href="https://www.digitalfirm.pk/digital-marketing-services/social-media-marketing/" target="_blank" rel="noopener">paid social media campaigns</a> to capture immediate and future demand, ensuring your brand reaches its target audience effectively. Our digital marketing services include close collaboration with your cross-functional teams to create a seamless customer experience.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="block services-cta-wrap">
+
+        <div class="column service-link js-service-link">
+            <div class="bg-slide-up"></div>
+            <i class="icon-clicker bg-icon"></i>
+            <div class="service-link-content">
+                <div class="tcell">
+                    <h3><strong class="cta-title">Google Ads Services</strong></h3>
+                    <div class="cta-copy">
+                        <p>Drive instant results and maximize ROI with our expert Google Ads management in Islamabad.</p>
+                    </div>
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/ppc-marketing/" class="box-link red" target="_blank" rel="noopener">Google Ads Services</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column service-link js-service-link">
+            <div class="bg-slide-up"></div>
+            <i class="icon-chart bg-icon"></i>
+            <div class="service-link-content">
+                <div class="tcell">
+                    <h3><strong class="cta-title">SEO Services in Pakistan</strong></h3>
+                    <div class="cta-copy">
+                        <p>Unlock sustainable organic growth with our proven SEO services strategies, tailored for Pakistan businesses.</p>
+                    </div>
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/seo-marketing/" class="box-link red" target="_blank" rel="noopener">SEO Marketing</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column service-link js-service-link">
+            <div class="bg-slide-up"></div>
+            <i class="icon-pages bg-icon"></i>
+            <div class="service-link-content">
+                <div class="tcell">
+                    <h3><strong class="cta-title">Content Marketing Agency</strong></h3>
+                    <div class="cta-copy">
+                        <p>Craft impactful content that resonates with your audience. Bespoke writing solutions.</p>
+                    </div>
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/content-marketing/" class="box-link red" target="_blank" rel="noopener">Content Marketing</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column service-link js-service-link">
+            <div class="bg-slide-up"></div>
+            <i class="icon-share bg-icon"></i>
+            <div class="service-link-content">
+                <div class="tcell">
+                    <h3><strong class="cta-title">Social Media Marketing</strong></h3>
+                    <div class="cta-copy">
+                        <p>Elevate your brand online & achieve your social media goals with our expert management.</p>
+                    </div>
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/social-media-marketing/" class="box-link red" target="_blank" rel="noopener">Social Media Marketing</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column service-link js-service-link">
+            <div class="bg-slide-up"></div>
+            <i class="icon-logo bg-icon"></i>
+            <div class="service-link-content">
+                <div class="tcell">
+                    <h3><strong class="cta-title">Graphic Design Services</strong></h3>
+                    <div class="cta-copy">
+                        <p>Strategic design partner. We craft impactful experiences that define and elevate your brand.</p>
+                    </div>
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/branding/" class="box-link red" target="_blank" rel="noopener">Branding Services</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column service-link js-service-link">
+            <div class="bg-slide-up"></div>
+            <i class="icon-pencil bg-icon"></i>
+            <div class="service-link-content">
+                <div class="tcell">
+                    <h3><strong class="cta-title">Web Design Services</strong></h3>
+                    <div class="cta-copy">
+                        <p>Enhance user experience and conversions with our professional website design Services in Pakistan.</p>
+                    </div>
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/web-design/" class="box-link red" target="_blank" rel="noopener">Web Design</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column service-link js-service-link">
+            <div class="bg-slide-up"></div>
+            <i class="icon-develop bg-icon"></i>
+            <div class="service-link-content">
+                <div class="tcell">
+                    <h3><strong class="cta-title">Web Development Services</strong></h3>
+                    <div class="cta-copy">
+                        <p>Build clean Websites, scalable Web optimized for SEO and Digital growth Services in Pakistan.</p>
+                    </div>
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/web-development/" class="box-link red" target="_blank" rel="noopener">Web Development</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column service-link js-service-link">
+            <div class="bg-slide-up"></div>
+            <i class="icon-mobile bg-icon"></i>
+            <div class="service-link-content">
+                <div class="tcell">
+                    <h3><strong class="cta-title">Mobile Apps Services</strong></h3>
+                    <div class="cta-copy">
+                        <p>Expert app development across all platforms. Deliver seamless user experiences & drive engagement.</p>
+                    </div>
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/app-development/" class="box-link red" target="_blank" rel="noopener">App Development</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="block services-cta-wrap">
+                
+        <div class="column service-link js-service-link">
+            <div class="bg-slide-up"></div>
+            <i class="icon-clicker bg-icon"></i>
+            <div class="service-link-content">
+                <div class="tcell">
+                    <h3><strong class="cta-title">Video Production House</strong></h3>
+                    <div class="cta-copy">
+                        <p>Our video production services in Pakistan bring your vision to life through compelling storytelling and high-quality production.</p>
+                    </div>
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/film-production/" class="box-link red" target="_blank" rel="noopener">Film Production</a>
+                </div>
+            </div>
+        </div>
+                
+        <div class="column service-link js-service-link">
+            <div class="bg-slide-up"></div>
+            <i class="icon-chart bg-icon"></i>
+            <div class="service-link-content">
+                <div class="tcell">
+                    <h3><strong class="cta-title">Animated Video Services</strong></h3>
+                    <div class="cta-copy">
+                        <p>Push the storytelling with AI-powered animation. Enhance brand communication & engagement.</p>
+                    </div>
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/animation-agency/" class="box-link red" target="_blank" rel="noopener">Animation Services</a>
+                </div>
+            </div>
+        </div>
+                
+        <div class="column service-link js-service-link">
+            <div class="bg-slide-up"></div>
+            <i class="icon-pages bg-icon"></i>
+            <div class="service-link-content">
+                <div class="tcell">
+                    <h3><strong class="cta-title">Corporate Photography</strong></h3>
+                    <div class="cta-copy">
+                        <p>Capturing powerful Corporate Photography across Pakistan, from Peshawar and Islamabad to Rawalpindi, Lahore, and Karachi.</p>
+                    </div>
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/corporate-photography/" class="box-link red" target="_blank" rel="noopener">Corporate Photography</a>
+                </div>
+            </div>
+        </div>
+                
+        <div class="column service-link js-service-link">
+            <div class="bg-slide-up"></div>
+            <i class="icon-share bg-icon"></i>
+            <div class="service-link-content">
+                <div class="tcell">
+                    <h3><strong class="cta-title">Events Management Services</strong></h3>
+                    <div class="cta-copy">
+                        <p>Create unforgettable events. Full-service event management in major Pakistani cities.</p>
+                    </div>
+                    <a href="https://www.digitalfirm.pk/digital-marketing-services/events/" class="box-link red" target="_blank" rel="noopener">Events Management</a>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+        <div class="block seo-before-after">
+            <h2 style="font-size: xx-large !important;">Pakistan’s Leading <strong class="red">Digital Marketing Agency In Islamabad</strong></h2>
+            <p class="sees-diff">We're more than just a digital marketing agency. As your strategic partner, we're dedicated to delivering tangible results that propel your business forward across Pakistan, including Islamabad, Rawalpindi, Peshawar, Karachi, Lahore, Multan, and Faisalabad. Our data-driven approach ensures that every campaign is optimized to maximize ROI. From crafting compelling content to executing effective <a class="red" href="https://www.digitalfirm.pk/digital-marketing-services/social-media-marketing/" target="_blank" rel="noopener">Social Media Strategies</a>, we're committed to transforming potential customers into loyal brand advocates.</p>
+            <br>
+            <h2><strong class="red" style="font-size: xx-large !important;">Digital Marketing Agency in Pakistan</strong></h2>
+            <p class="sees-diff">Elevate your online presence and drive business growth with Digital Firm, a leading digital marketing agency in Pakistan. Our comprehensive suite of services includes Search Engine Optimization (SEO), <a class="red" href="https://www.digitalfirm.pk/digital-marketing-services/ppc-marketing/" target="_blank" rel="noopener">Pay-Per-Click (PPC) Advertising</a>, Social Media Marketing (SMM), Content Marketing, Email Marketing, Web Design and Development, and Brand Strategy and Consulting. We use a data-driven approach to make informed decisions and optimize your campaigns. Our team of experts has years of experience in digital marketing. We tailor our services to meet your specific needs and track and report on the performance of your campaigns. We're committed to providing exceptional service.</p>
+            <p>Let's work together to achieve your digital marketing goals.</p>
+            <a class="box-link" href="https://www.digitalfirm.pk/digital-marketing-services/" target="_blank" rel="noopener">Digital Marketing Services</a>
+        </div>
+            <style>
+            .seo-before-after {
+                padding: 100px 0 50px;
+                text-align: center;
+                color: #fff;
+                background-color: #333333;
+            }
+
+            .seo-before-after p {
+                padding-left: 3%;
+                padding-right: 3%;
+            }
+
+            .seo-before-after .title {
+                padding-bottom: 85px;
+            }
+
+            .seo-before-after .col-title {
+                text-transform: uppercase;
+                font: 20px/ "Roboto", sans-serif;
+                padding-bottom: 20px;
+            }
+
+            .seo-before-after .graph-left {
+                clear: both;
+            }
+        </style>
+
+
+    <!--<div class="block services-intro">
+        <h3>Digital Firm <strong class="red">Work With Clients</strong></h3>
+    </div>
+
+
+    <div class="block work-listing">
+        <div class="column col33 portfolio-teaser" style="background-image:url(file/haid.jpg);" loading="lazy">
+            <img class="teaser-icon" src="file/hch-logo.png" alt="hch" loading="lazy">
+            <div class="teaser-subtext">
+            </div>
+            <div class="teaser-hover">
+                <div class="teaser-info">
+                    <div>Hearing Aids</div>
+                    <div class="work-type">STRATEGY + RESPONSIVE WEB DESIGN + SOCIAL MEDIA</div>
+                    <a class="box-link" href="https://www.digitalfirm.pk/work/hearingaids/" target="_blank" rel="noopener">VIEW PROJECT</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column col33 portfolio-teaser" style="background-image:url(file/1.jpg);" loading="lazy">
+            <img class="teaser-icon" src="file/lilly-company-logo.png" alt="Lilly" loading="lazy">
+            <div class="teaser-subtext">
+            </div>
+            <div class="teaser-hover">
+                <div class="teaser-info">
+                    <div>Lilly</div>
+                    <div class="work-type">EVENT COVERAGE + PRODUCTION SERVICES</div>
+                    <a class="box-link" href="#">VIEW PROJECT</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column col33 portfolio-teaser" style="background-image:url(file/1.jpg);" loading="lazy">
+            <img class="teaser-icon" src="file/logo-gbm.png" alt="gbm" loading="lazy">
+            <div class="teaser-subtext">
+            </div>
+            <div class="teaser-hover">
+                <div class="teaser-info">
+                    <div>Global Brand Marketing</div>
+                    <div class="work-type">STRATEGY + EVENT COVERAGE + LIVE STREAMING</div>
+                    <a class="box-link" href="#">VIEW PROJECT</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column col33 portfolio-teaser" style="background-image:url(file/1.jpg);" loading="lazy">
+            <img class="teaser-icon" src="file/getz-healthcare-logo_white.png" alt="getz" loading="lazy">
+            <div class="teaser-subtext">
+            </div>
+            <div class="teaser-hover">
+                <div class="teaser-info">
+                    <div>Getz Heathcare</div>
+                    <div class="work-type">EVENT COVERAGE + PHOTOSHOOT + SOCIAL MARKETING</div>
+                    <a class="box-link" href="#">VIEW PROJECT</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column col33 portfolio-teaser" style="background-image:url(file/1.jpg);" loading="lazy">
+            <img class="teaser-icon" src="file/UNDP.png" alt="UNDP" loading="lazy">
+            <div class="teaser-subtext">
+            </div>
+            <div class="teaser-hover">
+                <div class="teaser-info">
+                    <div>-</div>
+                    <div class="work-type">STRATEGY + COORPORATE VIDEOS + MARKETING</div>
+                    <a class="box-link" href="#">VIEW PROJECT</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column col33 portfolio-teaser" style="background-image:url(file/1.jpg);" loading="lazy">
+            <img class="teaser-icon" src="file/PTC.png" alt="PTC Old Logo" loading="lazy">
+            <div class="teaser-subtext">
+            </div>
+            <div class="teaser-hover">
+                <div class="teaser-info">
+                    <div>-</div>
+                    <div class="work-type">STRATEGY + ANIMATION + SOCIAL MEDIA MARKETING</div>
+                    <a class="box-link" href="#">VIEW PROJECT</a>
+                </div>
+            </div>
+        </div>-->
+    </div>
+
+
+    <div class="block recentNews">
+        <div class="wrapper">
+            <h3>Our Latest NEWS</h3>
+            <div class="news-tagLine">
+                What's happening at the Digital Firm </div>
+            <div class="news-nav">
+                <a class="news-link column col33" href="#">
+                    <span class="post-img" style=" background-image:url(file/1.jpg);"></span>
+                    <span class="news-title">
+                        Digital Firm Takes Home Gold and Silver Awards! </span>
+                </a>
+                <a class="news-link column col33" href="#">
+                    <span class="post-img" style=" background-image:url(file/1.jpg);"></span>
+                    <span class="news-title">
+                        Black Clover Brand </span>
+                </a>
+                <a class="news-link column col33" href="#">
+                    <span class="post-img" style=" background-image:url(file/1.jpg);"></span>
+                    <span class="news-title">
+                        Share a Coke iOS / Android App </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+        <div class="block seo-before-after">
+            <h3 style="font-size: xx-large !important;">Digital Marketing Services <strong class="red">FAQs</strong></h3><br />
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 itemprop="name" style="font-weight: 300 !important; font-size: 25px; text-transform: capitalize; text-align: center;">What is digital marketing and how can it benefit businesses?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+                Digital marketing is the strategic use of digital channels to promote a brand, product, or service to a targeted audience. It involves optimizing content across platforms like search engines, social media, email, and websites to reach potential customers through internet-connected devices. Advanced digital marketing leverages data, analytics, and automation to create personalized and measurable marketing strategies that drive engagement, visibility, and conversions. By effectively implementing digital marketing strategies, businesses can achieve significant benefits, including increased brand awareness, improved lead generation, higher conversion rates, enhanced customer engagement, and measurable return on investment.
+              </div>
+            </div>
+          </div><br />
+          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 itemprop="name" style="font-weight: 300 !important; font-size: 25px; text-transform: capitalize; text-align: center;">How can your digital marketing services help my business grow?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+              Our comprehensive digital marketing services are designed to boost your online visibility, attract more customers, and increase your revenue. By combining SEO, PPC, content marketing, social media management, and web design, we create a tailored strategy to achieve your business goals.
+              </div>
+            </div>
+          </div><br />
+          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 itemprop="name" style="font-weight: 300 !important; font-size: 25px; text-transform: capitalize; text-align: center;">What is the typical timeline for seeing results from your services?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+              The timeline for seeing results varies depending on the specific services and the overall digital marketing strategy. While SEO results may take several months to materialize, PPC campaigns can generate leads and conversions quickly. We'll work closely with you to set realistic expectations and track your progress.
+              </div>
+            </div>
+          </div><br />
+          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 itemprop="name" style="font-weight: 300 !important; font-size: 25px; text-transform: capitalize; text-align: center;">How do you measure the success of a digital marketing campaign?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+              We use a variety of key performance indicators (KPIs) to measure the success of your digital marketing campaigns. These include website traffic, conversion rates, lead generation, social media engagement, and return on investment (ROI). We provide regular reports and analytics to help you understand the performance of your campaigns.
+              </div>
+            </div>
+          </div><br />
+          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 itemprop="name" style="font-weight: 300 !important; font-size: 25px; text-transform: capitalize; text-align: center;">Do you offer packages or customized plans?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+              We offer both customized plans and packages to suit the needs and budget of different businesses. Our team will work with you to understand your goals and create a plan that delivers the best possible results.
+              </div>
+            </div>
+          </div><br />
+          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 itemprop="name" style="font-weight: 300 !important; font-size: 25px; text-transform: capitalize; text-align: center;">What Industries Do We Specialize In?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+              We specialize in providing tailored digital marketing solutions for a wide range of industries, including e-commerce, real estate, healthcare, education, technology, travel, and hospitality. Our expertise lies in understanding the unique challenges and opportunities within these sectors. We leverage our knowledge to develop effective strategies that drive brand awareness, generate leads, and boost sales. Whether you're a small business or a large corporation, we're committed to helping you achieve your digital marketing goals.
+              </div>
+            </div>
+          </div><br />
+          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 itemprop="name" style="font-weight: 300 !important; font-size: 25px; text-transform: capitalize; text-align: center;">Can Google Ads Be Used for All Industries and Products?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+              While Google Ads is a powerful tool for advertising, there are specific industries and products that are subject to stricter regulations and guidelines. This is to ensure a positive user experience and maintain the integrity of the platform. For example, industries such as healthcare and pharmaceuticals often require specific certifications and compliance with regulatory standards. Similarly, financial services, including loans and investments, are subject to strict regulations and require specific disclosures. It's crucial to carefully review Google's Advertising Policies to ensure compliance. If you're unsure about the specific requirements for your industry or product, it's advisable to consult with a digital marketing expert or directly with Google's support team.
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <footer class="footer block">
+        <div class="wrapper">
+            <div class="footer-nav" itemscope itemtype="http://schema.org/LocalBusiness">
+                
+                <div class="info-wrap spacer">
+                    <div class="ro-info">
+                    
+                        <img itemprop="image" src="/assets/uploads/2014/09/footer-logo.jpg" alt="Digital Firm logo"  style="display: none !important;" />
+                        <div>
+                            
+                            <span itemprop="legalName">Digital Firm SMC Pvt</span>
+                            
+                        </div>
+                    </div>
+                    <div class="ro-info">
+                        <div>
+                            <span itemprop="name">Street 24,<br>Near Bakeman</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-wrap right" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+
+                    <div class="ro-info last">
+                        <div>
+                            <span itemprop="addressCountry">PK</span>
+                            <span itemprop="priceRange" >+92</span>
+                            <br />
+                            <span itemprop="telephone">300-8049928</span>
+                            <span>
+                            </span>
+                        
+                        </div>
+                    </div>
+                    <div class="ro-info">
+                        <div itemprop="streetAddress">
+                            <span itemprop="addressRegion">I - 8/2,</span><br />
+                            <span itemprop="addressLocality">Islamabad</span>
+                            <span itemprop="postalCode">44000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="soc-nav">
+                <a class="soc-link" href="https://www.facebook.com/digitalfirm.pk" target="_blank"><img src="https://www.digitalfirm.pk/assets/uploads/2014/09/soc-fb.png" width="9" height="22" alt="FB"></a>
+                <a class="soc-link" href="https://www.pinterest.com/digitalmarketingagencypakistan/" target="_blank"><img src="https://www.digitalfirm.pk/assets/uploads/2014/09/soc-pinterest.png" width="23" height="23" alt="Pinterest"></a>
+                <a class="soc-link" href="https://x.com/DigitalFirmPk" target="_blank"><img src="https://www.digitalfirm.pk/assets/uploads/2014/09/soc-twitter.png" width="21" height="21" alt="X"></a>
+                <a class="soc-link" href="https://www.linkedin.com/company/digitalfirm-pk/" target="_blank"><img src="https://www.digitalfirm.pk/assets/uploads/2014/09/soc-linkedin.png" width="18" height="19" alt="LinkedIn"></a>
+                <a class="soc-link" href="https://www.instagram.com/digitalfirm.pk/" target="_blank"><img src="https://www.digitalfirm.pk/assets/uploads/2014/09/soc-instagram.png" width="22" height="23" alt="Instagram"></a>
+            </div>
+            <div class="copyright" itemprop="name">&copy; 2024 Digital Firm</div>
+        </div>
+    </footer>
+    <script type='text/javascript' src='template/js/ro-ajaxa94e.js?ver=4.4.1' fetchpriority="low"></script>
+    <script type='text/javascript' src='lib/js/wp-embed.mina94e.js?ver=4.4.1' fetchpriority="low"></script>
 </body>
 </html>
