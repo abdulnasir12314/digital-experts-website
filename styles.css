@@ -255,3 +255,9 @@ footer a {
 footer a:hover {
     color: #ff9900;
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
