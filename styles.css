@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 header {
@@ -50,65 +51,23 @@ header {
     color: white;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffcc00;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-.services, .about, .contact {
-    padding: 50px 20px;
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.service-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+h1 {
+    color: #0073e6;
 }
 
-.service-item {
-    background: white;
-    padding: 20px;
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form {
-    max-width: 400px;
-    margin: auto;
-}
-
-form label {
-    display: block;
-    margin-top: 10px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    cursor: pointer;
+p {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 footer {
