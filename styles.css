@@ -3,14 +3,15 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f9fa;
-    color: #333;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
 }
 
 header {
-    background-color: #0073e6;
+    background: rgba(0, 115, 230, 0.9);
     padding: 15px 0;
     text-align: center;
+    transition: background 0.3s ease-in-out;
 }
 
 .nav-menu {
@@ -25,6 +26,11 @@ header {
     color: white;
     font-weight: bold;
     text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.nav-menu .logo:hover {
+    transform: scale(1.1);
 }
 
 .nav-menu ul {
@@ -36,44 +42,137 @@ header {
 
 .nav-menu ul li {
     margin: 0 15px;
+    transition: transform 0.3s;
+}
+
+.nav-menu ul li:hover {
+    transform: translateY(-3px);
 }
 
 .nav-menu ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #ffcc00;
 }
 
 .hero {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #005bb5;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #0066ff, #0099ff);
     color: white;
+    animation: fadeIn 1.5s;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #ffdb4d;
+    transform: scale(1.1);
+}
+
+.services, .about, .contact {
+    padding: 50px 20px;
     text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-h1 {
-    color: #0073e6;
+.service-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.6;
+.service-item {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    color: black;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #005bb5;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background: #333;
     color: white;
     margin-top: 20px;
+}
+
+.reveal {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
